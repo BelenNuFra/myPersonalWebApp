@@ -1,0 +1,79 @@
+.footer {
+    background-color: #ffffff;
+    /* Fondo claro */
+    padding: 5px 200px;
+    /* Ajusta el relleno interno a menos */
+    text-align: center;
+    /* Centra el texto */
+    height: auto;
+    /* Altura automática según el contenido */
+    width: 100%;
+    /* Asegura que ocupe el ancho completo */
+}
+
+.footer p {
+    margin: 20px;
+    /* Añadimos margen para ocupar un espacio adecuado */
+}
+
+li.linkedin:hover svg {
+    transform: scale(1.1);
+    /* Agranda el ícono ligeramente */
+    transition: transform 0.3s ease;
+    /* Suaviza la animación */
+}
+
+
+/* Cambiar el color del SVG a azul LinkedIn al hacer hover */
+li.linkedin:hover image {
+    filter: brightness(0) saturate(100%) invert(19%) sepia(90%) saturate(743%) hue-rotate(165deg) brightness(90%) contrast(89%);
+    transition: filter 0.3s ease;
+    /* Añade una transición suave */
+}
+
+li.linkedin :hover svg,
+li.instagram :hover svg,
+li.twitter :hover svg,
+li.facebook :hover svg {
+    transform: scale(1.3);
+    /* Agranda el ícono ligeramente */
+    transition: transform 0.3s ease;
+    /* Suaviza la animación */
+}
+
+
+/* Efecto hover para LinkedIn */
+li.linkedin:hover image {
+    filter: brightness(0) saturate(100%) invert(19%) sepia(90%) saturate(743%) hue-rotate(165deg) brightness(90%) contrast(89%);
+    /* Ajusta este filtro según sea necesario */
+    transition: filter 0.3s ease;
+}
+
+/* Efecto hover para Instagram */
+li.instagram:hover image {
+    filter: brightness(0) saturate(100%) invert(40%) sepia(75%) saturate(600%) hue-rotate(320deg);
+    /* Ajusta este filtro según sea necesario */
+    transition: filter 0.3s ease;
+}
+
+/* Efecto hover para Twitter */
+li.twitter:hover image {
+    filter: brightness(0) saturate(100%) invert(24%) sepia(92%) saturate(477%) hue-rotate(190deg);
+    /* Ajusta este filtro según sea necesario */
+    transition: filter 0.3s ease;
+}
+
+/* Efecto hover para Facebook */
+li.facebook:hover image {
+    filter: brightness(0) saturate(100%) invert(25%) sepia(65%) saturate(475%) hue-rotate(190deg);
+    /* Ajusta este filtro según sea necesario */
+    transition: filter 0.3s ease;
+}
+
+/* Color por defecto (opcional, si deseas un color diferente antes del hover) */
+li.linkedin a image,
+li.instagram a image,
+li.twitter a image,
+li.facebook a image {
+    transition: filter 0.3s ease;
+}

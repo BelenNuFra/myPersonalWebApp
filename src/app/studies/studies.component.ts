@@ -15,6 +15,12 @@ export class StudiesComponent implements OnInit {
     let prev = document.querySelector('.prev');
     let slider = document.querySelector('.slider');
 
+    setInterval(() => {
+      let slides = document.querySelectorAll('.slides');
+      slider?.appendChild(slides[0]);
+    }, 3000);
+
+
     next?.addEventListener('click', function () {
       let slides = document.querySelectorAll('.slides');
       slider?.appendChild(slides[0]);

@@ -1,8 +1,17 @@
 nav {
     display: block;
     text-align: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+
+    /* Fija el menú en la parte superior */
 }
 
 a {
     margin: 10px;
+}
+
+.class {
+    padding-left: 50%;
 }

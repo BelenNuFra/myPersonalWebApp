@@ -9,6 +9,7 @@ import { StudiesComponent } from './studies/studies.component';
 import { LaboralExperienceComponent } from './laboral-experience/laboral-experience.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ContactComponent } from './contact/contact.component';
+import { FooterComponent } from "./footer/footer.component";
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ContactComponent } from './contact/contact.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FooterComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
