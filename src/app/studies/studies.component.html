@@ -16,22 +16,22 @@
 <body>
     <div class="container">
         <div class="slider">
-            <div class="slides" style="--img: url('/assets/images/uabLGBT.jpg')">
+            <div class="slides" style="--img: url('/assets/images/studies/uab1.jpg')">
                 <div class="content"></div>
             </div>
-            <div class="slides" style="--img: url('/assets/images/uabVerde.jpg')">
+            <div class="slides" style="--img: url('/assets/images/studies/uab2.jpeg')">
                 <div class="content"></div>
             </div>
-            <div class="slides" style="--img: url('/assets/images/uabEnginyeria.jpg')">
+            <div class="slides" style="--img: url('/assets/images/studies/uab3.jpg')">
                 <div class="content"></div>
             </div>
-            <div class="slides" style="--img: url('/assets/images/uabmujer.jpg')">
+            <div class="slides" style="--img: url('/assets/images/studies/uab4.jpg')">
                 <div class="content"></div>
             </div>
-            <div class="slides" style="--img: url('/assets/images/uabTorres.webp')">
+            <div class="slides" style="--img: url('/assets/images/studies/uab5.jpg')">
                 <div class="content"></div>
             </div>
-            <div class="slides" style="--img: url('/assets/images/telecomunicaciones.jpg')">
+            <div class="slides" style="--img: url('/assets/images/studies/uab6.jpg')">
                 <div class="content"></div>
             </div>
 
@@ -45,14 +45,14 @@
         </div>
     </div>
 
-    <div class="importantTopics">
+    <div id="importantTopics" class="container-fluid">
 
-        <div class="row">
+        <div class="row g-3">
 
-            <div class="col-lg-4">
+            <div id="topic1" class="col-lg-4 mb-3 ">
                 <svg class="bd-placeholder-img rounded-circle" width="140" height="140">
                     <rect width="100%" height="100%" fill="#777" />
-                    <image href="/assets/images/cs.jpg" width="140" height="140" />
+                    <image href="/assets/images/studies/subjects/cs.jpg" width="140" height="140" />
                 </svg>
 
                 <h2>Foundations of Computer Science</h2>
@@ -61,14 +61,14 @@
                     providing an understanding of hardware that optimizes software development. Additionally, it fosters
                     teamwork skills, problem-solving abilities, and autonomous learning, which are essential for
                     adapting to new technologies in the field of software engineering.</p>
-                <p><a class="btn btn-secondary"
+                <p><a id="ViewDetails1" class="btn btn-secondary"
                         href="https://guies.uab.cat/guies_docents/public/portal/html/2024/assignatura/103799/en">View
                         details &raquo;</a></p>
             </div><!-- /.col-lg-4 -->
-            <div class="col-lg-4">
+            <div id="topic2" class="col-lg-4 mb-3">
                 <svg class="bd-placeholder-img rounded-circle" width="140" height="140">
                     <rect width="100%" height="100%" fill="#777" />
-                    <image href="assets\images\microcontoller.jpg" width="140" height="140" />
+                    <image href="assets\images\studies\subjects\microcontoller.jpg" width="140" height="140" />
 
                 </svg>
 
@@ -78,14 +78,14 @@
                     peripherals and developing real-time applications, fostering critical thinking and analytical
                     abilities. Additionally, it emphasizes teamwork and the design of microcontroller-based systems,
                     preparing you for challenges in software development.</p>
-                <p><a class="btn btn-secondary"
+                <p><a id="ViewDetails2" class="btn btn-secondary"
                         href="https://guies.uab.cat/guies_docents/public/portal/html/2024/assignatura/102685/en">View
                         details &raquo;</a></p>
             </div><!-- /.col-lg-4 -->
-            <div class="col-lg-4">
+            <div id="topic3" class="col-lg-4 mb-3 ">
                 <svg class="bd-placeholder-img rounded-circle" width="140" height="140">
                     <rect width="100%" height="100%" fill="#777" />
-                    <image href="/assets/images/redes.png" width="140" height="140" />
+                    <image href="/assets/images/studies/subjects/redes.jpg" width="140" height="140" />
 
                 </svg>
 
@@ -96,150 +96,128 @@
                     delves into network interconnection and infrastructure sizing based on traffic parameters. Key
                     competencies such as teamwork, effective communication, and the analysis of the social and
                     environmental impact of technological solutions are also developed.</p>
-                <p><a class="btn btn-secondary"
+                <p><a id="ViewDetails3" class="btn btn-secondary"
                         href="https://guies.uab.cat/guies_docents/public/portal/html/2024/assignatura/102713/en">View
                         details &raquo;</a></p>
             </div><!-- /.col-lg-4 -->
         </div><!-- /.row -->
 
+        <!-- Segunda sección -->
+        <div id="Project1" class="container-fluid text-container">
+            <div class="row align-items-center">
+                <div class="col-md-4 text-center mb-3 position-relative">
+                    <img id="verticalPicture" src="/assets/images/pythonCoding2.jpg" class="img-fluid"
+                        alt="Foto vertical" style="max-width: 80%; position: relative; z-index: 1;">
+                </div>
 
-        <!-- START THE FEATURETTES -->
+                <div class="col-md-8">
+                    <p id="description-1" class="lead">
+                    <h2 class="title-heading">Temperature Sensor Simulator
+                        <span class="text-muted">
+                            Python, MQTT, Grafana</span>
+                    </h2>
+                    <p class="lead">
+                        Developed a temperature sensor simulator that extracts real-time data from OpenWeatherMap and
+                        sends
+                        it to a server using the MQTT protocol.</p>
+                    <div class="itemsPorject1">
+                        <ul>
+                            <li>Used the sys library to receive input parameters and random to generate a unique
+                                10-character
+                                identifier for each sensor.</li>
+                            <li>Implemented an infinite loop for the continuous operation of the sensor, with detection
+                                of
+                                interruption via CTRL + C.</li>
+                            <li>Configured periodic readings of temperature, humidity, and pressure every 10 minutes,
+                                processing
+                                the data into JSON format using json.dumps.</li>
+                            <li>The obtained data is stored in a Python dictionary and sent to the server under the
+                                topic
+                                "datosMeteorologicos".</li>
+                            <li>Implemented interactive visualizations in Grafana to display data on ambient
+                                temperature,
+                                relative humidity, and atmospheric pressure, with a color-coding system to identify
+                                critical
+                                conditions.</li>
+                        </ul>
+                    </div>
 
-
-        <div class="project1">
-            <div class="heading">
-                <h2 class="title-heading">Temperature Sensor Simulator
-                    <span class="text-muted">
-                        Python, MQTT, Grafana</span>
-                </h2>
-                <p class="lead">
-                    Developed a temperature sensor simulator that extracts real-time data from OpenWeatherMap and sends
-                    it to a server using the MQTT protocol.
-                <ul>
-                    <li>Used the sys library to receive input parameters and random to generate a unique 10-character
-                        identifier for each sensor.</li>
-                    <li>Implemented an infinite loop for the continuous operation of the sensor, with detection of
-                        interruption via CTRL + C.</li>
-                    <li>Configured periodic readings of temperature, humidity, and pressure every 10 minutes, processing
-                        the data into JSON format using json.dumps.</li>
-                    <li>The obtained data is stored in a Python dictionary and sent to the server under the topic
-                        "datosMeteorologicos".</li>
-                    <li>Implemented interactive visualizations in Grafana to display data on ambient temperature,
-                        relative humidity, and atmospheric pressure, with a color-coding system to identify critical
-                        conditions.</li>
-                </ul>
-            </div>
-
-            <div class="image">
-                <svg class="imageProject1" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img"
-                    aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <title>Placeholder</title>
-                    <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa"
-                        dy=".3em">500x500</text>
-                    <image href="/assets/images/pythonCoding.jpg" width="600" height="600" />
-                </svg>
-
-
+                </div>
             </div>
         </div>
 
-
-
-        <div class="project2">
-            <div class="imageProject2">
-                <img src="assets\images\hangman.jpg" alt="Project Image">
-            </div>
-            <div class="headingProject2">
-                <h2 class="title-heading">Hangman Game in C
-                    <span class="text-muted">
-                        C Language</span>
-                </h2>
-                <ul>
-                    <li>Developed a Hangman game using C, with the key features of the game such as:
-                        <ul>
-                            <li>Word selection.</li>
-                            <li>Validation of player inputs.</li>
-                            <li>Updating the game state after each turn.</li>
-                        </ul>
-                    </li>
-                    <li><strong>String Handling:</strong>
-                        <ul>
-                            <li>Used character arrays (<code>char[]</code>) to store the hidden word and the player's
-                                guessed letters.</li>
-                            <li>Manually implemented letter comparison and updating the correct letters in the word.
-                            </li>
-                        </ul>
-                    </li>
-                    <li><strong>Control Structures:</strong>
-                        <ul>
-                            <li>Employed loops (<code>for</code>, <code>while</code>) and conditionals (<code>if</code>,
-                                <code>else</code>) to manage the game logic.
-                            </li>
-                            <li>Controlled the number of allowed attempts and validated if the player won or lost the
-                                game.</li>
-                        </ul>
-                    </li>
-                    <li><strong>Code Modularity:</strong>
-                        <ul>
-                            <li>Divided the code into functions, such as:
+        <div id="Project2" class="container-fluid text-container position-relative">
+            <div class="row">
+                <div class="col-12 col-md-8 background-div p-0 order-2 order-md-1">
+                    <p id="description-1" class="lead">
+                    <h2 class="title-heading">Hangman Game in C
+                        <span class="text-muted">
+                            C Language</span>
+                    </h2>
+                    <p class="lead">
+                        Developed a Hangman game using C, with the key features of the game such as:</p>
+                    <div class="itemsProject2">
+                        <div class="itemsProject2">
+                            <ul>
+                                <li><strong>Word selection.</strong></li>
                                 <ul>
-                                    <li>Checking if the guessed letter is in the word.</li>
-                                    <li>Updating the game progress and displaying the current state.</li>
+                                    <li>Validation of player inputs.</li>
+                                    <li>Updating the game state after each turn.</li>
                                 </ul>
-                            </li>
-                            <li>This improved code readability and maintainability.</li>
-                        </ul>
-                    </li>
-                    <li><strong>Input Validation:</strong>
-                        <ul>
-                            <li>Implemented validations to handle invalid inputs (such as numerical characters) and
-                                controlled possible input errors.</li>
-                        </ul>
-                    </li>
-                    <li><strong>Testing and Debugging:</strong>
-                        <ul>
-                            <li>Conducted thorough testing to ensure the game worked correctly in different scenarios.
-                            </li>
-                            <li>Verified that the game logic correctly handled the player's victory or defeat.</li>
-                        </ul>
-                    </li>
-                </ul>
+
+                                <li><strong>String Handling:</strong>
+                                    <ul>
+                                        <li>Used character arrays (<code>char[]</code>) to store the hidden word and the
+                                            player's guessed letters.</li>
+                                        <li>Manually implemented letter comparison and updating the correct letters in
+                                            the word.</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Control Structures:</strong>
+                                    <ul>
+                                        <li>Employed loops (<code>for</code>, <code>while</code>) and conditionals
+                                            (<code>if</code>, <code>else</code>) to manage the game logic.</li>
+                                        <li>Controlled the number of allowed attempts and validated if the player won or
+                                            lost the game.</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Code Modularity:</strong>
+                                    <ul>
+                                        <li>Divided the code into functions, such as:</li> <!-- Modificado -->
+                                        <ul>
+                                            <li>Checking if the guessed letter is in the word.</li>
+                                            <li>Updating the game progress and displaying the current state.</li>
+                                        </ul>
+                                        <li>This improved code readability and maintainability.</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Input Validation:</strong>
+                                    <ul>
+                                        <li>Implemented validations to handle invalid inputs (such as numerical
+                                            characters) and controlled possible input errors.</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Testing and Debugging:</strong>
+                                    <ul>
+                                        <li>Conducted thorough testing to ensure the game worked correctly in different
+                                            scenarios.</li>
+                                        <li>Verified that the game logic correctamente handled the player's victory or
+                                            defeat.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 image-container p-0 order-1 order-md-2">
+                    <img id="verticalPicture" src="assets\images\hangman.jpg" class="img-fluid" alt="Foto vertical"
+                        style="max-width: 80%; position: relative; z-index: 1;">
+                </div>
             </div>
         </div>
 
-
-
-        <!-- /END THE FEATURETTES -->
-
-    </div><!-- /.container -->
-
-
-
-    <!--<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-        <div class="col-md-4 d-flex align-items-center">
-            <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
-                <svg class="bi" width="30" height="24">
-                    <use xlink:href="#bootstrap" />
-                </svg>
-            </a>
-            <span class="mb-3 mb-md-0 text-body-secondary">&copy; 2024 Company, Inc</span>
-        </div>
-
-        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-            <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24">
-                        <use xlink:href="#twitter" />
-                    </svg></a></li>
-            <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24">
-                        <use xlink:href="#instagram" />
-                    </svg></a></li>
-            <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24">
-                        <use xlink:href="#facebook" />
-                    </svg></a></li>
-            <i class="bi bi-instagram"></i>
-        </ul>
-    </footer>-->
-
-
+    </div>
 
 
 </body>

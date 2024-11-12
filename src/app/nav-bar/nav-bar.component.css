@@ -4,6 +4,8 @@ nav {
     position: fixed;
     width: 100%;
     z-index: 1000;
+    height: 70px;
+    /* para que se superponga al contenido */
 
     /* Fija el menú en la parte superior */
 }

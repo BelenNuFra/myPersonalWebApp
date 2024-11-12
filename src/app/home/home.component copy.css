@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html,
+body {
+    min-height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+.container {
+
+    position: relative;
+    min-width: 100vw;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.container-2 {
+
+    position: relative;
+    min-width: 100vw;
+    margin: 0;
+    padding: 0;
+    height: 90vh;
+    overflow: hidden;
+    display: flex;
+    background-color: rgb(209, 207, 207);
+    border-radius: 10px;
+
+    padding-top: 100px;
+    padding-left: 50px;
+    /*padding: 40px;*/
+}
+
+
+
+
+.fondo {
+
+    background-color: rgb(5, 109, 104);
+    height: 75%;
+    width: 25%;
+    margin-left: 0%;
+    padding-left: 0%;
+    transform: translateY(-5%);
+
+
+}
+
+.foto {
+    position: absolute;
+    transform: translateX(2%);
+}
+
+#Text {
+    height: 75%;
+    width: 50%;
+    padding-left: 50px;
+    position: absolute;
+    transform: translateX(60%);
+    color: rgb(0, 0, 0);
+    font-size: 250%;
+    background-color: rgb(209, 207, 207);
+}
+
+#Text .description #description-1 {
+    color: black;
+}
+
+#Text .description #description-2 {
+    margin-top: 20px;
+    color: black;
+}
+
+
+
+
+.column-30 {
+    padding-left: 0ox;
+    height: 100vh;
+    width: 40%;
+    background-color: rgb(5, 109, 104);
+    /* Color para visualizar */
+}
+
+.column-70 {
+    padding-right: 0px;
+    padding-top: 60px;
+    height: 100vh;
+    width: 70%;
+    background-color: rgb(246, 246, 246);
+    /* Color para visualizar */
+}
+
+.Text {
+    position: absolute;
+    top: 60%;
+    transform: translateX(-40%);
+}
+
+#myName {
+    color: white;
+    font-size: 250%;
+}
+
+#Name {
+    color: white;
+    font-size: 300%;
+}
+
+
+#role {
+    color: rgb(0, 0, 0);
+    background-color: #b0ec41;
+    font-size: 250%;
+    padding: 10px;
+}
+
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 2.5em;
+    color: #333;
+}
+
+.header h2 {
+    font-size: 1.5em;
+    color: #007BFF;
+    /* Change to your preferred color */
+}
+
+.about {
+    margin: 20px 0;
+}
+
+.about h3 {
+    font-size: 1.2em;
+    color: #333;
+}
+
+.about h4 {
+    font-size: 1.5em;
+    color: #007BFF;
+    /* Change to your preferred color */
+}
+
+.about p {
+    font-size: 1em;
+    color: #666;
+}
+
+.photo {
+    text-align: center;
+}
+
+.photo img {
+    border-radius: 50%;
+    width: 200%;
+    /* Adjust as needed */
+    height: 200%;
+    /* Adjust as needed */
+}
+
+.container-3 {
+
+    position: relative;
+    min-width: 100vw;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding-top: 150px;
+    align-items: center;
+    overflow-y: scroll;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    padding-left: 6%;
+}
+
+
+#project {
+
+    background-color: rgb(5, 109, 104);
+    display: flex;
+    inline-size: none;
+    width: 30%;
+    padding-top: 30%;
+    align-items: center;
+
+
+
+}
+
+#containerProjects13,
+#containerProjects46,
+#containerProjects79 {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    /* Espacio entre cada proyecto dentro del contenedor*/
+}
+
+.card {
+    height: 400%;
+    width: 400%;
+}

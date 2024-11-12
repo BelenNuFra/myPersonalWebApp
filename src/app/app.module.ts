@@ -11,6 +11,7 @@ import { ProjectsComponent } from './projects/projects.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from "./footer/footer.component";
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,12 +20,15 @@ import { FooterComponent } from "./footer/footer.component";
     StudiesComponent,
     LaboralExperienceComponent,
     ProjectsComponent,
-    ContactComponent
+    ContactComponent,
+
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FooterComponent
+    FooterComponent,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

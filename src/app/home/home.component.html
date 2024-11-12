@@ -1,32 +1,183 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Título de la Página</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="home.component.css">
 </head>
 
 <body>
-    <div class="Container">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
 
-        <div class="Gif">
-            <!--<img src="/assets/images/home/gitCodigo.gif" width="100%" height="100%" /> -->
-            <div class="image">
-                <svg class="circle" width="500" height="500">
-                    <rect width="100%" height="100%" fill="#777" />
-                    <image href="/assets/images/home/yo/belen_cv.jpg" width="500" height="500" />
-                </svg>
+    <!-- Primera sección -->
+    <div class="container-fluid position-relative">
+        <div class="row">
+            <div class="col-12 col-md-4 background-div p-0 d-none d-md-block">
+                <!-- Espacio en blanco o contenido adicional -->
+            </div>
+            <div class="col-12 col-md-8 image-container p-0">
+                <img src="assets/images/home/yo/belen_cv_2.jpg" class="img-fluid" alt="100vh">
+            </div>
+        </div>
+
+        <div class="overlay-text"> <!-- Div para el texto superpuesto -->
+            <h1 class="display-4" id="myName">MY NAME IS</h1>
+            <h1 class="display-4 fw-bold" id="Name">BELÉN NÚÑEZ</h1>
+            <h2 class="mt-3" id="role">I'M A JUNIOR SOFTWARE ENGINEER</h2>
+        </div>
+
+        <div class="text-center">
+
+        </div>
+    </div>
+
+    <!-- Segunda sección -->
+    <!--<div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col-md-4 text-center mb-3 position-relative">
+                <div class="shadow-div"></div> 
+                <img id="verticalPicture" src="assets/images/home/yo/vertical.jpg" class="img-fluid" alt="Foto vertical"
+                    style="max-width: 80%; position: relative; z-index: 1;">
+            </div>
+
+            <div class="col-md-8">
+                <p id="description-1" class="lead">Experienced in working within multidisciplinary teams, effectively
+                    bridging communication between technical and non-technical stakeholders.</p>
+                <p id="description-2" class="lead">Highly organized, with strong time-management skills to prioritize
+                    tasks and meet deadlines across multiple projects. Adaptable and quick to learn new technologies,
+                    thriving
+                    in dynamic and evolving environments.</p>
+            </div>
+
+            <div class="fade-in-element">Contenido 1</div>
+            <div class="fade-in-element">Contenido 2</div>
+            <div class="fade-in-element">Contenido 3</div>
+
+        </div>
+    </div> -->
+
+    <!-- Skills Section -->
+    <!--<div class="main-container position-relative">
+
+
+        <div id="image1" class="circle">
+            <div class="content">
+                <h1>HTML</h1>
+            </div>
+        </div>
+
+        <div id="image4" class="circle">
+            <div class="content">
+                <h1>CSS</h1>
+            </div>
+        </div>
+        <div id="image3" class="circle">
+            <div class="content">
+                <h1>ANGULAR</h1>
+            </div>
+        </div>
+        <div id="image2" class="circle">
+            <div class="content">
+                <h1>PYTHON</h1>
+            </div>
+        </div>
+
+        <div id="image5" class="circle">
+            <div class="content">
+                <h1>JAVASCRIPT</h1>
             </div>
         </div>
 
 
+
+    </div>-->
+
+    <div id="skillsText">
+        <h1>SKILLS SET</h1>
+    </div>
+
+    <div class="skillsContainer">
+
+
+
+        <div class="container">
+            <div class="circular-progress">
+                <span class="progress-value">0%</span>
+            </div>
+
+            <span class="text"> HTML & CSS & ANGULAR</span>
+        </div>
+
+        <div class="container">
+            <div class="circular-progress">
+                <span class="progress-value">10%</span>
+            </div>
+
+            <span class="text"> Python </span>
+        </div>
+
+        <div class="container">
+            <div class="circular-progress">
+                <span class="progress-value">20%</span>
+            </div>
+
+            <span class="text"> C/C++</span>
+        </div>
     </div>
 
 
 
+    <!-- Tercera sección (Proyectos) -->
+    <div id="Projects" class="container-fluid">
+        <div class="row">
+            <!-- Fila 1 de proyectos -->
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 1</h5>
+                        <p class="card-text">Description of Project 1.</p>
+                        <a href="#" id="botom" class="btn btn-primary">Github</a>
+                    </div>
+                </div>
+            </div>
 
+            <!-- Fila 2 de proyectos -->
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 2</h5>
+                        <p class="card-text">Description of Project 2.</p>
+                        <a href="#" id="botom" class="btn btn-primary">Github</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fila 3 de proyectos -->
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 3</h5>
+                        <p class="card-text">Description of Project 3.</p>
+                        <a href="#" id="botom" class="btn btn-primary">Github</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Agrega más proyectos aquí según sea necesario -->
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-p5t9akAvUQuvAB7Fj/2m4sdS9bABz1QIDiK/V6mcb+I/TN5HB0LVsKfno5fOR5Tx"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

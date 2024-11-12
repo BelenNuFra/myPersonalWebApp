@@ -1,0 +1,169 @@
+.main-container {
+
+    padding-top: 1%;
+    height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-div {
+
+    width: 100vw;
+    height: 40%;
+    padding: 0;
+    /*margin: 0;*/
+    /* Ocupa el 30% de la altura del contenedor principal */
+    background-color: rgb(2, 122, 161);
+    /* Color de fondo para visualizar el div */
+}
+
+.bottom-div {
+
+    height: 60%;
+    position: relative;
+    /* Ocupa el 70% de la altura restante */
+    background-color: rgb(247, 238, 227);
+    /* Color de fondo para visualizar el div */
+}
+
+.top-div img {
+
+    margin-left: 0%;
+    padding-left: 0%;
+    height: 100%;
+    min-width: 100vw;
+    object-fit: cover;
+
+    /* para ajustar la imagen sin distorsión */
+}
+
+#latImage1 {
+
+    position: absolute;
+    /* Posiciona el div de superposición */
+    top: 20%;
+    /* Ajusta según necesites para que esté por encima */
+    left: 7%;
+    /* Centra horizontalmente */
+    transform: translateX(-50%);
+    /* Corrige el centrado */
+    z-index: 1;
+    /* Asegúrate de que esté por encima de otros elementos */
+    height: 70%;
+
+    background-color: rgba(255, 0, 0, 0.5);
+    /* Color de fondo semitransparente para visualización */
+}
+
+
+#latImage1 img {
+
+    margin-left: 0%;
+    padding-left: 0%;
+    height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+
+}
+
+#latImage2 {
+
+    position: absolute;
+    /* Posiciona el div de superposición */
+    top: 80%;
+    /* Ajusta según necesites para que esté por encima */
+    right: 15.5%;
+    /* Centra horizontalmente */
+    transform: translateX(100%);
+    /* Corrige el centrado */
+    z-index: 1;
+    /* Asegúrate de que esté por encima de otros elementos */
+    height: 40%;
+
+    background-color: rgba(255, 0, 0, 100);
+    /* Color de fondo semitransparente para visualización */
+}
+
+#latImage2 img {
+
+    margin-right: 0%;
+    padding-right: 0%;
+    height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+
+}
+
+.image-container {
+    background-color: rgb(5, 109, 104);
+    height: 100vh;
+    overflow: hidden;
+    /* Evita que la imagen sobresalga del contenedor */
+}
+
+.image-container .img-fluid {
+    height: 100%;
+    /* Ocupará el 100% de la altura del contenedor */
+    width: 100%;
+    /* Ocupará el 100% de la anchura del contenedor */
+    object-fit: cover;
+    /* La imagen cubre el contenedor sin distorsionarse */
+}
+
+.text-container {
+    padding-left: 10%;
+
+}
+
+.text-container ul {
+    text-align: justify !important;
+}
+
+.text-container ul li {
+    line-height: 1.6;
+    font-size: 1.1em;
+    /* Aumenta el tamaño de los elementos de la lista */
+}
+
+
+@media (max-width: 768px) {
+    .image-container {
+        height: 30vh;
+        min-width: 100vw;
+        /* La mitad de la altura de la pantalla en pantallas pequeñas */
+    }
+}
+
+.experiences2 {
+    padding-top: 10%;
+    background-color: rgb(247, 238, 227);
+}
+
+.image-container2 .img-fluid {
+    position: absolute;
+
+    height: 100%;
+    /* Ocupará el 100% de la altura del contenedor */
+    width: 100%;
+    /* Ocupará el 100% de la anchura del contenedor */
+    object-fit: cover;
+    /* La imagen cubre el contenedor sin distorsionarse */
+}
+
+.experiences2 .text-container {
+
+    text-align: justify;
+}
+
+#mainText {
+    position: relative;
+    left: 20%;
+    top: 40%;
+    font-size: 50%;
+    z-index: 100;
+    color: rgb(158, 164, 170);
+    font-family: Arial, sans-serif;
+    font-style: italic;
+    overflow-wrap: break-word;
+}

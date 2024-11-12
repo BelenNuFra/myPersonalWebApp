@@ -1,51 +1,264 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
+.background-div {
+    background-color: rgb(247, 238, 227);
+    height: 100vh;
 }
 
-body {
-    min-height: 100vh;
+/* home.component.css */
+.image-container img {
+    height: 100vh;
     width: 100%;
-    margin: 0;
-    padding: 0;
-
+    object-fit: cover;
 }
 
-.container {
-    height: 50%;
-    position: relative;
-    min-width: 100vw;
-    margin: 0;
-    padding: 0;
-    height: 100vh;
+.overlay-text {
+    position: absolute;
+    /* Posiciona el div de forma absoluta */
+    top: 75%;
+    /* Centra verticalmente */
+    left: 36%;
+    /* Centra horizontalmente */
+    transform: translate(-50%, -50%);
+    /* Ajusta el centrado */
+    color: rgb(10, 10, 10);
+    /* Cambia el color del texto a blanco o a otro que sea visible */
+    text-align: left;
+    /* Alinea el texto al centro */
+    padding: 10px;
+    /* Añade algo de espacio alrededor del texto */
+    z-index: 1;
+    /* Asegura que el texto esté por encima de la imagen y el div de fondo */
+}
+
+#role {
+    color: rgb(0, 0, 0);
+    background-color: #67e7e1;
+    font-size: 250%;
+    padding: 10px;
+}
+
+.shadow-div {
+    margin-top: 5%;
+    position: absolute;
+    /* Posiciona el div de sombra de forma absoluta */
+    top: 0;
+    /* Alinea a la parte superior del contenedor */
+    left: 50%;
+    /* Centra horizontalmente */
+    transform: translateX(-60%);
+    /* Ajusta la posición horizontalmente */
+    width: 75%;
+    /* Ancho igual al de la imagen */
+    height: 85%;
+    /* Asegúrate de que la altura sea del 100% del contenedor */
+    background-color: rgb(5, 109, 104);
+    /* Color de la sombra, semitransparente */
+    z-index: 0;
+    /* Coloca la sombra detrás de la imagen */
+}
+
+
+#Projects {
+    padding-top: 3%;
+    background-color: rgb(247, 238, 227);
+}
+
+
+#botom {
+    background-color: rgb(5, 109, 104);
+    border-color: aliceblue;
+}
+
+.experiences {
+    position: absolute;
+    z-index: 3;
+}
+
+
+
+.main-container {
+    min-height: 100vh;
+    /*background-color: rgb(248, 248, 248);*/
     overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-image: url('/assets/images/home/skills/skills3.jpg');
+    background-size: cover;
+    /* Hace que la imagen cubra todo el contenedor */
+    background-position: center;
+    /* Centra la imagen en el contenedor */
+    background-repeat: no-repeat;
 
 }
 
-.Gif {
-    position: relative;
-    height: 100vh;
-    min-width: 100vw;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
 
 .circle {
-    width: 500px;
-    height: 500px;
-    border-radius: 50%;
+    width: 15%;
+    height: 35%;
     display: flex;
-    justify-content: center;
+    position: absolute;
     align-items: center;
-    transform: translateX(-150%);
-    box-shadow: 0 25px 50px rgb(0, 0, 0.5);
+    justify-content: center;
+    border-radius: 50%;
+    background-color: rgb(109, 108, 108);
+    /* O el color que prefieras */
 
+}
+
+.content h1 {
+    color: aliceblue;
+    font-size: 3em;
+    text-align: center;
+
+}
+
+
+
+#image1 {
+    padding-top: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 10%;
+
+    top: 32%;
+    left: 30%;
+    transform: translateX(-50%);
+    object-fit: cover;
+    overflow: hidden;
+    background-position: center;
+}
+
+#image2 {
+    padding-top: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 10%;
+    top: 32%;
+    left: 70%;
+    transform: translateX(-50%);
+
+    object-fit: cover;
+    overflow: hidden;
+    background-position: center;
+}
+
+#image3 {
+    padding-top: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 10%;
+    top: 72%;
+    left: 80%;
+    transform: translateX(-50%);
+
+    object-fit: cover;
+    overflow: hidden;
+    background-position: center;
+}
+
+#image4 {
+    padding-top: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 10%;
+    top: 72%;
+    left: 20%;
+    transform: translateX(-50%);
+
+    object-fit: cover;
+    overflow: hidden;
+    background-position: center;
+}
+
+#image5 {
+
+    padding-top: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 10%;
+
+    top: 12%;
+    left: 50%;
+    transform: translateX(-50%);
+    object-fit: cover;
+    overflow: hidden;
+    background-position: center;
+}
+
+/*SKILLS*/
+
+.skillsContainer {
+    padding-top: 10%;
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: #c5c1c1;
+    /*background: url('/assets/images/home/skills/python.webp');*/
+    display: flex;
+    object-fit: cover;
+}
+
+
+.container {
+    display: flex;
+    width: 420px;
+    height: 420px;
+    padding: 50px 0;
+    border-radius: 8px;
+    background: #fff;
+    row-gap: 30px;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 5%;
+
+
+}
+
+.circular-progress {
+    position: relative;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    background: conic-gradient(#5cccc6 3.6deg, #ededed 0deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.circular-progress::before {
+    content: "";
+    position: absolute;
+    height: 210px;
+    width: 210px;
+    background-color: #ffffff;
+    border-radius: 50%;
+
+}
+
+.progress-value {
+    position: relative;
+    font-size: 40px;
+    font-weight: 600;
+    color: #5cccc6;
+}
+
+.text {
+    font-size: 30px;
+    font-weight: 500;
+    color: #606060;
+}
+
+/* Centrar el texto de SKILLS y darle estilo */
+#skillsText {
+    padding-top: 3%;
+    position: absolute;
+    z-index: 3;
+    left: 45%;
+    text-align: center;
+    margin-bottom: 20px;
+    /* Espacio entre el título y los contenedores de habilidades */
+}
+
+#skillsText h1 {
+    font-size: 4em;
+    /* Tamaño del texto */
+    color: #fff;
+    /* Color del texto */
 }

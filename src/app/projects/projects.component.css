@@ -1,0 +1,95 @@
+.main-container {
+    position: relative;
+    min-width: 100vw;
+    min-height: 90vh;
+    background-color: rgb(66, 64, 64);
+    overflow: hidden;
+}
+
+.image-container img {
+    position: absolute;
+    left: 50%;
+    bottom: 0%;
+    z-index: 2;
+
+}
+
+#circle1 {
+    position: absolute;
+    background: linear-gradient(to right, rgb(206, 32, 32), rgb(236, 117, 19));
+    z-index: 1;
+    left: 62%;
+    /* Esto lo posiciona al 50% desde el borde izquierdo del contenedor */
+    top: 60%;
+    /* 60% desde el borde superior */
+    transform: translate(-50%, -50%);
+    /* Esto mueve el círculo a su centro */
+    height: 600px;
+    /* Tamaño del círculo */
+    width: 600px;
+    /* Tamaño del círculo */
+    border-radius: 50%;
+    /* Esto hace que sea un círculo */
+}
+
+#circle2 {
+    position: absolute;
+    background-color: rgb(120, 127, 129);
+    z-index: 1;
+    left: 62%;
+    /* Esto lo posiciona al 50% desde el borde izquierdo del contenedor */
+    top: 60%;
+    /* 60% desde el borde superior */
+    transform: translate(-50%, -50%);
+    /* Esto mueve el círculo a su centro */
+    height: 450px;
+    /* Tamaño del círculo */
+    width: 450px;
+    /* Tamaño del círculo */
+    border-radius: 50%;
+    /* Esto hace que sea un círculo */
+}
+
+.background-div {
+    position: relative;
+    min-height: 90vh;
+    /* Asegura que el div tenga una altura completa */
+    width: 100%;
+    /* Asegura que ocupe el ancho completo del contenedor */
+}
+
+.overlay-text {
+    position: absolute;
+    top: 55%;
+    /* Mueve el texto al 50% de la altura del contenedor */
+    left: 20%;
+    /* Mueve el texto al 50% de la anchura del contenedor */
+    transform: translate(-50%, -50%);
+    /* Ajusta el texto para centrarlo exactamente */
+    text-align: center;
+    /* Centra el texto dentro del div */
+    color: rgb(235, 235, 235);
+    /* Asegúrate de que el texto sea visible sobre el fondo */
+}
+
+.softSkills {
+    margin-top: 20px;
+    /* Añade un margen superior para separar el h4 */
+    font-size: 1.2rem;
+    /* Ajusta el tamaño de la fuente si es necesario */
+    line-height: 1.5;
+    /* Espaciado de las líneas */
+    text-align: justify;
+}
+
+.softSkillsDiv {
+    position: relative;
+    left: 28%;
+    width: 45%;
+    height: 100%;
+}
+
+#role {
+
+    background-color: rgb(255, 94, 0.5);
+}
