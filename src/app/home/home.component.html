@@ -16,106 +16,61 @@
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
 
-    <!-- Primera sección -->
-    <div class="container-fluid position-relative">
+
+    <div class="container-fluid main-container position-relative">
         <div class="row">
-            <div class="col-12 col-md-4 background-div p-0 d-none d-md-block">
-                <!-- Espacio en blanco o contenido adicional -->
-            </div>
-            <div class="col-12 col-md-8 image-container p-0">
-                <img src="assets/images/home/yo/belen_cv_2.jpg" class="img-fluid" alt="100vh">
-            </div>
-        </div>
+            <div class="col-12 col-md-4 col-sm-12 background-div p-0">
+                <div class="overlay-text">
+                    <h1 class="display-4 d-none d-md-block" id="myName">MY NAME IS</h1>
+                    <h1 class="display-4 fw-bold" id="Name">BELÉN NÚÑEZ</h1>
+                    <h2 class="mt-3" id="role">I'M A JUNIOR SOFTWARE ENGINEER</h2>
+                    <div class="softSkillsDiv">
+                        <h4 class="softSkills  d-none d-md-block">I am experienced in collaborating within
+                            multidisciplinary
+                            teams, with
+                            clear
+                            communication
+                            skills that bridge technical and non-technical stakeholders. I excel in time management,
+                            prioritizing tasks and meeting deadlines to ensure efficient progress across multiple
+                            projects.
+                            Additionally, I am adaptable and flexible, quickly adjusting to new technologies and changes
+                            in
+                            the work environment</h4>
+                    </div>
 
-        <div class="overlay-text"> <!-- Div para el texto superpuesto -->
-            <h1 class="display-4" id="myName">MY NAME IS</h1>
-            <h1 class="display-4 fw-bold" id="Name">BELÉN NÚÑEZ</h1>
-            <h2 class="mt-3" id="role">I'M A JUNIOR SOFTWARE ENGINEER</h2>
-        </div>
+                </div>
+            </div>
+            <div class="circle-image-wrapper">
+                <div id="circle1" class="col-12 col-md-8 image-container p-0"></div>
+                <div id="circle2" class="col-12 col-md-8 image-container p-0"></div>
+                <div class="col-12 col-md-8 image-container p-0">
+                    <img src="assets/images/home/yo/home_withoutBackground.png" class="img-fluid">
+                </div>
 
-        <div class="text-center">
+            </div>
 
         </div>
     </div>
 
-    <!-- Segunda sección -->
-    <!--<div class="container-fluid">
-        <div class="row align-items-center">
-            <div class="col-md-4 text-center mb-3 position-relative">
-                <div class="shadow-div"></div> 
-                <img id="verticalPicture" src="assets/images/home/yo/vertical.jpg" class="img-fluid" alt="Foto vertical"
-                    style="max-width: 80%; position: relative; z-index: 1;">
-            </div>
-
-            <div class="col-md-8">
-                <p id="description-1" class="lead">Experienced in working within multidisciplinary teams, effectively
-                    bridging communication between technical and non-technical stakeholders.</p>
-                <p id="description-2" class="lead">Highly organized, with strong time-management skills to prioritize
-                    tasks and meet deadlines across multiple projects. Adaptable and quick to learn new technologies,
-                    thriving
-                    in dynamic and evolving environments.</p>
-            </div>
-
-            <div class="fade-in-element">Contenido 1</div>
-            <div class="fade-in-element">Contenido 2</div>
-            <div class="fade-in-element">Contenido 3</div>
-
-        </div>
-    </div> -->
-
-    <!-- Skills Section -->
-    <!--<div class="main-container position-relative">
-
-
-        <div id="image1" class="circle">
-            <div class="content">
-                <h1>HTML</h1>
-            </div>
-        </div>
-
-        <div id="image4" class="circle">
-            <div class="content">
-                <h1>CSS</h1>
-            </div>
-        </div>
-        <div id="image3" class="circle">
-            <div class="content">
-                <h1>ANGULAR</h1>
-            </div>
-        </div>
-        <div id="image2" class="circle">
-            <div class="content">
-                <h1>PYTHON</h1>
-            </div>
-        </div>
-
-        <div id="image5" class="circle">
-            <div class="content">
-                <h1>JAVASCRIPT</h1>
-            </div>
-        </div>
-
-
-
-    </div>-->
+    <!--SKILLS-->
 
     <div id="skillsText">
-        <h1>SKILLS SET</h1>
+        <h1>MY SKILLS </h1>
     </div>
 
     <div class="skillsContainer">
 
 
 
-        <div class="container">
-            <div class="circular-progress">
+        <div class="container col-lg-2 col-md-6 col-sm-6 col-6 mb-1">
+            <div class="circular-progress ">
                 <span class="progress-value">0%</span>
             </div>
 
             <span class="text"> HTML & CSS & ANGULAR</span>
         </div>
 
-        <div class="container">
+        <div class="container col-lg-2 col-md-6 col-sm-6  col-6 mb-1">
             <div class="circular-progress">
                 <span class="progress-value">10%</span>
             </div>
@@ -123,32 +78,44 @@
             <span class="text"> Python </span>
         </div>
 
-        <div class="container">
+        <div class="container col-lg-2 col-md-6 col-sm-6 col-6 mb-1">
             <div class="circular-progress">
                 <span class="progress-value">20%</span>
             </div>
-
             <span class="text"> C/C++</span>
         </div>
+
+        <div class="container col-lg-2 col-md-6 col-sm-6 col-6 mb-1">
+            <div class="circular-progress">
+                <span class="progress-value">20%</span>
+            </div>
+            <span class="text"> Matlab</span>
+        </div>
+
     </div>
 
 
+    <!--PROJECTS-->
 
-    <!-- Tercera sección (Proyectos) -->
     <div id="Projects" class="container-fluid">
         <div class="row">
-            <!-- Fila 1 de proyectos -->
+
             <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title">Project 1</h5>
-                        <p class="card-text">Description of Project 1.</p>
-                        <a href="#" id="botom" class="btn btn-primary">Github</a>
+                        <h5 class="card-title">Design of an IoT device for distance measurement.</h5>
+                        <p class="card-text">The project aims to create a smart IoT device that accurately calculates
+                            distances and transmits data via Bluetooth Low Energy (BLE). It involves understanding and
+                            using components like UART, Timer, and BLE modules. Each module plays a key role in the
+                            device's operation, requiring detailed knowledge of their configuration and functionality.
+                        </p>
+                        <a href="https://github.com/BelenNuFra/Design-of-an-IoT-device-for-distance-measurement.-"
+                            id="botom" class="btn btn-primary">Github</a>
                     </div>
                 </div>
             </div>
 
-            <!-- Fila 2 de proyectos -->
+
             <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
                 <div class="card">
                     <div class="card-body">
@@ -159,7 +126,7 @@
                 </div>
             </div>
 
-            <!-- Fila 3 de proyectos -->
+
             <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
                 <div class="card">
                     <div class="card-body">
@@ -170,7 +137,7 @@
                 </div>
             </div>
 
-            <!-- Agrega más proyectos aquí según sea necesario -->
+
         </div>
     </div>
 

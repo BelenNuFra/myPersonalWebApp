@@ -1,19 +1,39 @@
+.navbar {
+    padding-left: 20%;
+}
+
 nav {
-    display: block;
-    text-align: center;
+    display: flex;
+    justify-content: center;
     position: fixed;
     width: 100%;
     z-index: 1000;
     height: 70px;
-    /* para que se superponga al contenido */
-
-    /* Fija el menú en la parte superior */
 }
 
-a {
-    margin: 10px;
+.navbar-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0;
 }
 
-.class {
-    padding-left: 50%;
+.nav-item {
+    margin: 0 10px;
+
+}
+
+a.nav-link {
+    padding: 10px 15px;
+}
+
+@media (max-width: 620px) {
+
+    .navbar {
+        padding-left: 0%;
+    }
+
+    .studies {
+        padding-top: 4%;
+    }
 }

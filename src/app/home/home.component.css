@@ -1,32 +1,18 @@
-.background-div {
-    background-color: rgb(247, 238, 227);
-    height: 100vh;
-}
-
-/* home.component.css */
-.image-container img {
-    height: 100vh;
-    width: 100%;
-    object-fit: cover;
-}
+/* Fisrt Section*/
 
 .overlay-text {
-    position: absolute;
-    /* Posiciona el div de forma absoluta */
-    top: 75%;
-    /* Centra verticalmente */
-    left: 36%;
-    /* Centra horizontalmente */
-    transform: translate(-50%, -50%);
-    /* Ajusta el centrado */
+
     color: rgb(10, 10, 10);
-    /* Cambia el color del texto a blanco o a otro que sea visible */
     text-align: left;
-    /* Alinea el texto al centro */
     padding: 10px;
-    /* Añade algo de espacio alrededor del texto */
     z-index: 1;
-    /* Asegura que el texto esté por encima de la imagen y el div de fondo */
+    position: absolute;
+    top: 55%;
+    left: 22%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgb(235, 235, 235);
+
 }
 
 #role {
@@ -36,179 +22,228 @@
     padding: 10px;
 }
 
-.shadow-div {
-    margin-top: 5%;
-    position: absolute;
-    /* Posiciona el div de sombra de forma absoluta */
-    top: 0;
-    /* Alinea a la parte superior del contenedor */
-    left: 50%;
-    /* Centra horizontalmente */
-    transform: translateX(-60%);
-    /* Ajusta la posición horizontalmente */
-    width: 75%;
-    /* Ancho igual al de la imagen */
-    height: 85%;
-    /* Asegúrate de que la altura sea del 100% del contenedor */
-    background-color: rgb(5, 109, 104);
-    /* Color de la sombra, semitransparente */
-    z-index: 0;
-    /* Coloca la sombra detrás de la imagen */
-}
-
-
-#Projects {
-    padding-top: 3%;
-    background-color: rgb(247, 238, 227);
-}
-
-
-#botom {
-    background-color: rgb(5, 109, 104);
-    border-color: aliceblue;
-}
-
-.experiences {
-    position: absolute;
-    z-index: 3;
-}
-
-
-
 .main-container {
+    position: relative;
+    min-width: 100vw;
     min-height: 100vh;
-    /*background-color: rgb(248, 248, 248);*/
+    background-color: rgb(66, 64, 64);
     overflow: hidden;
-    background-image: url('/assets/images/home/skills/skills3.jpg');
-    background-size: cover;
-    /* Hace que la imagen cubra todo el contenedor */
-    background-position: center;
-    /* Centra la imagen en el contenedor */
-    background-repeat: no-repeat;
-
 }
 
-
-.circle {
-    width: 15%;
-    height: 35%;
-    display: flex;
+.image-container img {
     position: absolute;
-    align-items: center;
-    justify-content: center;
+    left: 53%;
+    bottom: 0%;
+    z-index: 2;
+
+}
+
+#circle1 {
+    position: absolute;
+    background: linear-gradient(to right, rgb(17, 219, 226), rgb(233, 13, 222));
+    z-index: 1;
+    height: 600px;
+    width: 600px;
     border-radius: 50%;
-    background-color: rgb(109, 108, 108);
-    /* O el color que prefieras */
+}
+
+#circle2 {
+    position: absolute;
+    background-color: rgb(120, 127, 129);
+    z-index: 1;
+    height: 450px;
+    width: 450px;
+    border-radius: 50%;
 
 }
 
-.content h1 {
-    color: aliceblue;
-    font-size: 3em;
-    text-align: center;
+#circle1,
+#circle2 {
+    left: 63vw;
+    top: 60vh;
+    transform: translate(-50%, -50%);
+}
+
+.circle-image-wrapper {
+    left: 90%;
+    background-color: #fff;
+}
+
+.background-div {
+    position: relative;
+    min-height: 90vh;
+    width: 100%;
 
 }
 
 
-
-#image1 {
-    padding-top: 10%;
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-bottom: 10%;
-
-    top: 32%;
-    left: 30%;
-    transform: translateX(-50%);
-    object-fit: cover;
-    overflow: hidden;
-    background-position: center;
+.softSkills {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    text-align: justify;
 }
 
-#image2 {
-    padding-top: 10%;
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-bottom: 10%;
-    top: 32%;
-    left: 70%;
-    transform: translateX(-50%);
-
-    object-fit: cover;
-    overflow: hidden;
-    background-position: center;
+.softSkillsDiv {
+    position: relative;
+    left: 28%;
+    width: 45%;
+    height: 100%;
 }
 
-#image3 {
-    padding-top: 10%;
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-bottom: 10%;
-    top: 72%;
-    left: 80%;
-    transform: translateX(-50%);
+#role {
 
-    object-fit: cover;
-    overflow: hidden;
-    background-position: center;
+    background-color: rgb(17, 219, 226);
 }
 
-#image4 {
-    padding-top: 10%;
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-bottom: 10%;
-    top: 72%;
-    left: 20%;
-    transform: translateX(-50%);
+/*WIDTH LESS THAN 760PX*/
 
-    object-fit: cover;
-    overflow: hidden;
-    background-position: center;
+@media (max-width: 768px) {
+
+    .image-container img {
+        height: 70%;
+        position: absolute;
+        left: 20%;
+        bottom: 0%;
+        z-index: 2;
+
+    }
+
+    #role {
+        color: rgb(0, 0, 0);
+        margin-top: 0%;
+        background-color: #67bee7;
+        font-size: 150%;
+        min-width: 100vw;
+
+    }
+
+    .overlay-text {
+        min-width: 100vw;
+        color: rgb(10, 10, 10);
+        text-align: left;
+        z-index: 1;
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: rgb(235, 235, 235);
+
+    }
+
+    #circle1 {
+        position: absolute;
+        background: linear-gradient(to right, rgb(17, 219, 226), rgb(233, 13, 222));
+        z-index: 1;
+        left: 50%;
+        top: 65%;
+        transform: translate(-50%, -50%);
+        height: 70%;
+        width: 80%;
+        border-radius: 50%;
+    }
+
+    #circle2 {
+        position: absolute;
+        background-color: rgb(120, 127, 129);
+        z-index: 1;
+        left: 50%;
+        top: 65%;
+        transform: translate(-50%, -50%);
+        height: 50%;
+        width: 60%;
+        border-radius: 50%;
+    }
+
+
+
+
 }
 
-#image5 {
+/*Big*/
+@media (min-width: 2000px) {
+    .main-container {
 
-    padding-top: 10%;
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-bottom: 10%;
+        position: relative;
+        min-width: 100vw;
+        min-height: 10vh;
+        background-color: rgb(66, 64, 64);
+        overflow: hidden;
+    }
 
-    top: 12%;
-    left: 50%;
-    transform: translateX(-50%);
-    object-fit: cover;
-    overflow: hidden;
-    background-position: center;
+    .image-container img {
+        position: absolute;
+        left: 65%;
+        bottom: 0%;
+        z-index: 2;
+
+    }
+
+    #circle1 {
+        position: absolute;
+        background: linear-gradient(to right, rgb(17, 219, 226), rgb(233, 13, 222));
+        z-index: 1;
+        height: 600px;
+        width: 600px;
+        border-radius: 50%;
+    }
+
+    #circle2 {
+        position: absolute;
+        background-color: rgb(120, 127, 129);
+        z-index: 1;
+        height: 450px;
+        width: 450px;
+        border-radius: 50%;
+
+    }
+
+    #circle1,
+    #circle2 {
+        left: 70vw;
+        top: 60vh;
+        transform: translate(-50%, -50%);
+    }
+
+    .overlay-text {
+
+        color: rgb(10, 10, 10);
+        text-align: left;
+        padding: 10px;
+        z-index: 1;
+        position: absolute;
+        top: 55%;
+        left: 30%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: rgb(235, 235, 235);
+
+    }
+
+
 }
+
+
 
 /*SKILLS*/
 
 .skillsContainer {
+    position: relative;
     padding-top: 10%;
-    min-height: 100vh;
+    margin-top: 0%;
+
+    min-height: 60vh;
     min-width: 100vw;
-    background-color: #c5c1c1;
+    background-color: #615f5f;
     /*background: url('/assets/images/home/skills/python.webp');*/
     display: flex;
     object-fit: cover;
-}
-
-
-.container {
-    display: flex;
-    width: 420px;
-    height: 420px;
-    padding: 50px 0;
-    border-radius: 8px;
-    background: #fff;
-    row-gap: 30px;
-    flex-direction: column;
-    align-items: center;
-    margin-left: 5%;
-
+    flex-wrap: wrap;
+    justify-content: center;
 
 }
+
 
 .circular-progress {
     position: relative;
@@ -227,38 +262,369 @@
     position: absolute;
     height: 210px;
     width: 210px;
-    background-color: #ffffff;
+    background-color: #615f5f;
     border-radius: 50%;
 
 }
 
 .progress-value {
     position: relative;
-    font-size: 40px;
+    font-size: 60px;
     font-weight: 600;
-    color: #5cccc6;
+    color: #ffffff;
 }
 
 .text {
     font-size: 30px;
     font-weight: 500;
-    color: #606060;
+    color: #ffffff;
 }
 
-/* Centrar el texto de SKILLS y darle estilo */
 #skillsText {
-    padding-top: 3%;
+    position: relative;
+    margin-bottom: 0;
+
+    background-color: #615f5f;
+    padding-top: 1%;
     position: absolute;
     z-index: 3;
-    left: 45%;
+    left: 5%;
     text-align: center;
-    margin-bottom: 20px;
-    /* Espacio entre el título y los contenedores de habilidades */
+
 }
 
 #skillsText h1 {
     font-size: 4em;
-    /* Tamaño del texto */
     color: #fff;
-    /* Color del texto */
+
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding-top: 10%;
+    }
+}
+
+
+
+/*phone*/
+
+@media (max-width: 300px) {
+
+    .image-container img {
+        height: 60%;
+    }
+
+    .overlay-text {
+        min-width: 100vw;
+        color: rgb(10, 10, 10);
+        text-align: left;
+        z-index: 1;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: rgb(235, 235, 235);
+        font-size: 100%;
+
+    }
+
+    #role {
+        color: rgb(0, 0, 0);
+        margin-top: 0%;
+        background-color: #67bee7;
+        font-size: 100%;
+        min-width: 100vw;
+
+    }
+
+
+    .image-container img {
+        position: absolute;
+        left: 5%;
+        bottom: 0%;
+        z-index: 2;
+
+    }
+
+    #circle1 {
+        position: absolute;
+        left: 85%;
+        top: 70%;
+        background: linear-gradient(to right, rgb(17, 219, 226), rgb(233, 13, 222));
+        z-index: 1;
+        height: 400px;
+        width: 400px;
+        border-radius: 50%;
+    }
+
+    #circle2 {
+        position: absolute;
+        left: 85%;
+        top: 70%;
+        background-color: rgb(120, 127, 129);
+        z-index: 1;
+        height: 300px;
+        width: 300px;
+        border-radius: 50%;
+
+    }
+
+
+    /*Skills*/
+    .container {
+
+        padding-top: 15%;
+
+    }
+
+
+
+}
+
+@media(max-width: 400px) {
+
+
+    .overlay-text {
+
+        padding-top: 0%;
+
+    }
+
+    .image-container img {
+        position: absolute;
+        left: 15%;
+        bottom: 0%;
+        z-index: 2;
+        height: 50%;
+
+    }
+
+
+    #circle1 {
+        position: absolute;
+        left: 85%;
+        top: 70%;
+        background: linear-gradient(to right, rgb(17, 219, 226), rgb(233, 13, 222));
+        z-index: 1;
+        height: 300px;
+        width: 300px;
+        border-radius: 50%;
+    }
+
+    #circle2 {
+        position: absolute;
+        left: 85%;
+        top: 90%;
+
+
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .image-container img {
+        height: 60%;
+    }
+
+    .overlay-text {
+        min-width: 100vw;
+        color: rgb(10, 10, 10);
+        text-align: left;
+        z-index: 1;
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: rgb(235, 235, 235);
+        font-size: 100%;
+
+    }
+
+    #role {
+        color: rgb(0, 0, 0);
+        margin-top: 0%;
+        background-color: #67bee7;
+        font-size: 100%;
+        min-width: 100vw;
+
+    }
+
+
+    .image-container img {
+        position: absolute;
+        left: 25%;
+        bottom: 0%;
+        z-index: 2;
+
+    }
+
+    #circle1 {
+        position: absolute;
+        left: 50%;
+        top: 70%;
+        background: linear-gradient(to right, rgb(17, 219, 226), rgb(233, 13, 222));
+        z-index: 1;
+        height: 400px;
+        width: 400px;
+        border-radius: 50%;
+    }
+
+    #circle2 {
+        position: absolute;
+        left: 50%;
+        top: 70%;
+        background-color: rgb(120, 127, 129);
+        z-index: 1;
+        height: 300px;
+        width: 300px;
+        border-radius: 50%;
+
+    }
+
+
+    /*Skills*/
+
+    .skillsContainer {
+
+        padding-top: 5%;
+        min-height: 50vh;
+    }
+
+
+    .circular-progress {
+        position: relative;
+        height: 70%;
+        width: 50%;
+        border-radius: 50%;
+        background: conic-gradient(#5cccc6 3.6deg, #ededed 0deg);
+        display: flex;
+
+
+    }
+
+    .circular-progress::before {
+        content: "";
+        position: absolute;
+        height: 80%;
+        width: 75%;
+        background-color: #615f5f;
+        border-radius: 50%;
+
+    }
+
+    .progress-value {
+        position: relative;
+        font-size: 20px;
+        font-weight: 600;
+        color: #ffffff;
+    }
+
+    .text {
+        font-size: 15px;
+        font-weight: 500;
+        color: #ffffff;
+    }
+
+    #skillsText {
+        position: relative;
+        margin-bottom: 0;
+
+        background-color: #615f5f;
+        padding-top: 1%;
+        position: absolute;
+        z-index: 3;
+        left: 5%;
+        text-align: center;
+
+
+    }
+
+    #skillsText h1 {
+        font-size: 2em;
+        color: #fff;
+    }
+
+
+
+}
+
+
+@media(max-width: 600px) {
+    .overlay-text {
+        min-width: 100vw;
+        color: rgb(10, 10, 10);
+        text-align: left;
+        z-index: 1;
+        position: absolute;
+        top: 26%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: rgb(235, 235, 235);
+        font-size: 100%;
+
+    }
+
+
+    .image-container img {
+        height: 60%;
+        position: absolute;
+        left: 20%;
+        bottom: 0%;
+        z-index: 2;
+
+    }
+
+    #circle1 {
+        position: absolute;
+        left: 50%;
+        top: 70%;
+        background: linear-gradient(to right, rgb(17, 219, 226), rgb(233, 13, 222));
+        z-index: 1;
+        height: 400px;
+        width: 400px;
+        border-radius: 50%;
+    }
+
+    #circle2 {
+        position: absolute;
+        left: 50%;
+        top: 70%;
+        background-color: rgb(120, 127, 129);
+        z-index: 1;
+        height: 300px;
+        width: 300px;
+        border-radius: 50%;
+
+    }
+
+}
+
+
+
+/* PROJECTS*/
+
+#Projects {
+    padding-top: 3%;
+    background-color: #615f5f;
+}
+
+
+#botom {
+    background-color: rgb(41, 108, 184);
+    border-color: aliceblue;
+}
+
+#botom:hover {
+    background-color: rgb(136, 181, 233);
+}
+
+.experiences {
+    position: absolute;
+    z-index: 3;
 }

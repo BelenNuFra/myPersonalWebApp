@@ -13,69 +13,12 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    /*let images = [
-      'url(/assets/images/home/skills/html5.png)',
-      'url(/assets/images/home/skills/css.png)',
-      'url(/assets/images/home/skills/javascript.png',
-      'url(/assets/images/home/skills/python.png)',
-      'url(/assets/images/home/skills/angular.png)',
-    ];
-
-    setInterval(() => {
-      // Mueve la primera imagen al final del arreglo
-      images.push(images.shift()!);
-
-      // Selecciona todos los elementos de los círculos
-      let circulos = document.querySelectorAll('.circle');
-
-      // Asigna las imágenes del arreglo a cada círculo
-      circulos.forEach((circulo, index) => {
-        (circulo as HTMLElement).style.backgroundImage = images[index];
-      });
-    }, 3000);*/
-
-
-    /*let text = [
-     'url(/assets/images/home/skills/html5.png)',
-     'url(/assets/images/home/skills/css.png)',
-     'url(/assets/images/home/skills/javascript.png',
-     'url(/assets/images/home/skills/python.png)',
-     'url(/assets/images/home/skills/angular.png)',
-   ];
-
-   setInterval(() => {
-     // Mueve la primera imagen al final del arreglo
-     images.push(images.shift()!);
-
-     // Selecciona todos los elementos de los círculos
-     let circulos = document.querySelectorAll('.circle');
-
-     // Asigna las imágenes del arreglo a cada círculo
-     circulos.forEach((circulo, index) => {
-       (circulo as HTMLElement).style.backgroundImage = images[index];
-     });
-   }, 3000);*/
-
-    /*let texts = ['HTML', 'CSS', 'ANGULAR', 'PYTHON', 'JAVASCRIPT'];
-
-    setInterval(() => {
-      // Mueve el primer texto al final del arreglo
-      texts.push(texts.shift()!);
-
-      // Selecciona todos los elementos con clase `.circle .content h1`
-      let textos = document.querySelectorAll('.circle .content h1');
-
-      // Asigna el texto correspondiente a cada círculo
-      textos.forEach((texto, index) => {
-        texto.textContent = texts[index];
-      });
-    }, 4000);*/
 
     const circularProgressElements = document.querySelectorAll(".circular-progress") as NodeListOf<HTMLElement>,
       progressValueElements = document.querySelectorAll(".progress-value");
 
     // Valores de progreso finales para cada barra
-    const progressEndValues = [80, 80, 40];
+    const progressEndValues = [80, 80, 40, 30];
     const speed = 90;
 
     // Array para almacenar el progreso actual de cada barra (inicialmente en 0)
