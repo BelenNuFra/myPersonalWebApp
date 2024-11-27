@@ -1,4 +1,4 @@
-.navbar {
+/*.navbar {
     padding-left: 20%;
 }
 
@@ -30,10 +30,8 @@ a.nav-link {
 @media (max-width: 620px) {
 
     .navbar {
-        padding-left: 0%;
+        padding-left: 10%;
     }
 
-    .studies {
-        padding-top: 4%;
-    }
-}
+
+}*/

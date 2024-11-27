@@ -1,0 +1,472 @@
+/* Fisrt Section*/
+
+.overlay-text {
+
+    color: rgb(10, 10, 10);
+    text-align: left;
+    padding: 10px;
+    z-index: 1;
+    position: absolute;
+    top: 55%;
+    left: 22%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgb(235, 235, 235);
+
+}
+
+#role {
+    color: rgb(0, 0, 0);
+    background-color: #67e7e1;
+    font-size: 250%;
+    padding: 10px;
+}
+
+.main-container {
+    position: relative;
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color: rgb(66, 64, 64);
+    overflow: hidden;
+}
+
+.image-container img {
+    position: absolute;
+    left: 53%;
+    bottom: 0%;
+    z-index: 2;
+
+}
+
+#circle1 {
+    position: absolute;
+    background: linear-gradient(to right, rgb(17, 219, 226), rgb(233, 13, 222));
+    z-index: 1;
+    height: 600px;
+    width: 600px;
+    border-radius: 50%;
+}
+
+#circle2 {
+    position: absolute;
+    background-color: rgb(120, 127, 129);
+    z-index: 1;
+    height: 450px;
+    width: 450px;
+    border-radius: 50%;
+
+}
+
+#circle1,
+#circle2 {
+    left: 63vw;
+    top: 60vh;
+    transform: translate(-50%, -50%);
+}
+
+
+
+.background-div {
+    position: relative;
+    min-height: 90vh;
+    width: 100%;
+
+}
+
+
+.softSkills {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.softSkillsDiv {
+    position: relative;
+    left: 28%;
+    width: 45%;
+    height: 100%;
+}
+
+#role {
+
+    background-color: rgb(17, 219, 226);
+}
+
+#skillsText {
+    min-width: 100vw;
+    background-color: #615f5f;
+}
+
+
+.skillsContainer {
+    position: relative;
+    min-height: 50vh;
+    min-width: 100vw;
+    background-color: #615f5f;
+    display: flex;
+    object-fit: cover;
+    flex-wrap: wrap;
+    padding-bottom: 5%;
+
+}
+
+.skillsContainer {
+    position: relative;
+    min-height: 50vh;
+    min-width: 100vw;
+    background-color: #615f5f;
+    display: flex;
+    object-fit: cover;
+    flex-wrap: wrap;
+    padding-bottom: 5%;
+
+
+}
+
+.skillsContainer .container {
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.circular-progress {
+    position: relative;
+    top: 15%;
+    height: 60%;
+    width: 60%;
+    border-radius: 50%;
+    background: conic-gradient(#5cccc6 3.6deg, #ededed 0deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.circular-progress::before {
+    content: "";
+    position: absolute;
+    height: 80%;
+    width: 80%;
+    background-color: #615f5f;
+    border-radius: 50%;
+
+}
+
+.progress-value {
+    position: relative;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.container {
+    bottom: 10%;
+}
+
+.text {
+    position: absolute;
+    top: 65%;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+#skillsText h1 {
+    color: #fff;
+
+}
+
+
+
+/*WIDTH LESS THAN 760PX*/
+
+@media (max-width: 768px) {
+
+    .image-container img {
+        height: 70%;
+        left: 20%;
+
+    }
+
+    #role {
+
+        background-color: #67bee7;
+        font-size: 150%;
+        min-width: 100vw;
+
+    }
+
+    .overlay-text {
+        top: 20%;
+        left: 50%;
+
+    }
+
+    #circle1 {
+
+        left: 50%;
+        top: 65%;
+        height: 70%;
+        width: 80%;
+
+    }
+
+    #circle2 {
+
+        left: 50%;
+        top: 65%;
+        height: 50%;
+        width: 60%;
+
+    }
+
+    .skillsContainer {
+        justify-content: none;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+
+    }
+
+    .text {
+        top: 30%;
+    }
+
+
+}
+
+
+/*phone*/
+
+@media (max-width: 300px) {
+
+    .image-container img {
+        height: 60%;
+    }
+
+    .overlay-text {
+        top: 30%;
+        left: 50%;
+        font-size: 100%;
+    }
+
+    #role {
+        background-color: #67bee7;
+        min-width: 100vw;
+    }
+
+
+    .image-container img {
+        left: 5%;
+        bottom: 0%;
+    }
+
+    #circle1 {
+
+        left: 85%;
+        top: 70%;
+        height: 400px;
+        width: 400px;
+
+    }
+
+    #circle2 {
+
+        left: 85%;
+        top: 70%;
+        height: 300px;
+        width: 300px;
+
+
+    }
+
+    .text {
+
+        top: 30%;
+
+    }
+
+
+
+
+}
+
+@media(max-width: 400px) {
+
+
+    .overlay-text {
+
+        padding-top: 0%;
+
+    }
+
+    .image-container img {
+
+        left: 15%;
+        height: 50%;
+
+    }
+
+
+    #circle1 {
+
+        left: 85%;
+        top: 70%;
+        height: 500px;
+        width: 400px;
+
+    }
+
+    #circle2 {
+
+        left: 85%;
+        top: 90%;
+        height: 400px;
+        width: 400px;
+
+    }
+
+    .text {
+
+        top: 30%;
+
+    }
+
+
+
+}
+
+
+@media (max-width: 500px) {
+
+    .image-container img {
+        height: 60%;
+    }
+
+    .overlay-text {
+        top: 25%;
+        left: 50%;
+    }
+
+    #role {
+
+        font-size: 100%;
+        min-width: 100vw;
+    }
+
+
+    .image-container img {
+        left: 25%;
+
+    }
+
+    #circle1 {
+        left: 50%;
+        top: 70%;
+        height: 400px;
+        width: 400px;
+    }
+
+    #circle2 {
+        left: 50%;
+        top: 70%;
+        height: 300px;
+        width: 300px;
+    }
+
+    .text {
+
+        top: 30%;
+
+    }
+
+
+
+
+}
+
+
+@media(max-width: 600px) {
+    .overlay-text {
+        top: 26%;
+    }
+
+
+    .image-container img {
+        height: 60%;
+        left: 20%;
+
+    }
+
+    #circle1 {
+        left: 50%;
+        top: 70%;
+        height: 500px;
+        width: 500px;
+
+    }
+
+    #circle2 {
+
+        left: 50%;
+        top: 70%;
+        height: 400px;
+        width: 400px;
+
+    }
+
+    .text {
+
+        top: 30%;
+
+    }
+
+}
+
+
+@media(min-width: 1000px) {
+    .circular-progress {
+
+        top: 35%;
+        height: 50%;
+        width: 60%;
+
+
+    }
+
+    .circular-progress::before {
+
+        height: 80%;
+        width: 80%;
+
+    }
+
+}
+
+
+
+
+
+/* PROJECTS*/
+
+#Projects {
+    padding-top: 3%;
+    background-color: #615f5f;
+}
+
+
+#botom {
+    background-color: rgb(41, 108, 184);
+    border-color: aliceblue;
+}
+
+#botom:hover {
+    background-color: rgb(136, 181, 233);
+}
+
+.experiences {
+    position: absolute;
+    z-index: 3;
+}

@@ -32,8 +32,9 @@
 
 .image-container img {
     position: absolute;
-    left: 53%;
-    bottom: 0%;
+    left: 50%;
+    height: 70vh;
+    bottom: -2%;
     z-index: 2;
 
 }
@@ -156,71 +157,15 @@
         border-radius: 50%;
     }
 
-
-
-
 }
 
-/*Big*/
-@media (min-width: 2000px) {
-    .main-container {
 
-        position: relative;
-        min-width: 100vw;
-        min-height: 10vh;
-        background-color: rgb(66, 64, 64);
-        overflow: hidden;
+@media (max-width: 1800px) {
+
+
+    #role {
+        font-size: 200%;
     }
-
-    .image-container img {
-        position: absolute;
-        left: 65%;
-        bottom: 0%;
-        z-index: 2;
-
-    }
-
-    #circle1 {
-        position: absolute;
-        background: linear-gradient(to right, rgb(17, 219, 226), rgb(233, 13, 222));
-        z-index: 1;
-        height: 600px;
-        width: 600px;
-        border-radius: 50%;
-    }
-
-    #circle2 {
-        position: absolute;
-        background-color: rgb(120, 127, 129);
-        z-index: 1;
-        height: 450px;
-        width: 450px;
-        border-radius: 50%;
-
-    }
-
-    #circle1,
-    #circle2 {
-        left: 70vw;
-        top: 60vh;
-        transform: translate(-50%, -50%);
-    }
-
-    .overlay-text {
-
-        color: rgb(10, 10, 10);
-        text-align: left;
-        padding: 10px;
-        z-index: 1;
-        position: absolute;
-        top: 55%;
-        left: 30%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-        color: rgb(235, 235, 235);
-
-    }
-
 
 }
 
@@ -312,7 +257,7 @@
 @media (max-width: 300px) {
 
     .image-container img {
-        height: 60%;
+        height: 50%;
     }
 
     .overlay-text {
@@ -397,7 +342,7 @@
         left: 15%;
         bottom: 0%;
         z-index: 2;
-        height: 50%;
+        height: 40%;
 
     }
 
@@ -426,9 +371,7 @@
 
 @media (max-width: 500px) {
 
-    .image-container img {
-        height: 60%;
-    }
+
 
     .overlay-text {
         min-width: 100vw;
@@ -460,13 +403,14 @@
         left: 25%;
         bottom: 0%;
         z-index: 2;
+        height: 30vh;
 
     }
 
     #circle1 {
         position: absolute;
         left: 50%;
-        top: 70%;
+        top: 60%;
         background: linear-gradient(to right, rgb(17, 219, 226), rgb(233, 13, 222));
         z-index: 1;
         height: 400px;
@@ -477,7 +421,7 @@
     #circle2 {
         position: absolute;
         left: 50%;
-        top: 70%;
+        top: 60%;
         background-color: rgb(120, 127, 129);
         z-index: 1;
         height: 300px;
@@ -572,9 +516,9 @@
 
 
     .image-container img {
-        height: 60%;
+        height: 50%;
         position: absolute;
-        left: 20%;
+        left: 15%;
         bottom: 0%;
         z-index: 2;
 
@@ -586,8 +530,8 @@
         top: 70%;
         background: linear-gradient(to right, rgb(17, 219, 226), rgb(233, 13, 222));
         z-index: 1;
-        height: 400px;
-        width: 400px;
+        height: 450px;
+        width: 450px;
         border-radius: 50%;
     }
 
@@ -597,8 +541,8 @@
         top: 70%;
         background-color: rgb(120, 127, 129);
         z-index: 1;
-        height: 300px;
-        width: 300px;
+        height: 350px;
+        width: 350px;
         border-radius: 50%;
 
     }
